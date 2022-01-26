@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<head>
+
+    <title> factor of 96</title>
+
+</head>
+
+<body>
+    <p>Write a program to check a number is factor of 96 or not and if the given number is more Than 96 program should say ‘not a valid input’
+    </p>
+
+    <script>
+        var number = +prompt("Enter any number");
+
+        if (96 % number === 0) {
+            console.log("The given number " + number + " is the factor of 96");
+        } else {
+            if (number > 96) {
+                console.log("not a valid input");
+            } else {
+                console.log("The given number " + number + " is not the factor of 96");
+            }
+        }
+    </script>
+</body>
+
+</html>

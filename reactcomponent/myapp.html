@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <title>React componet </title>
+    <style>
+        .betterview {
+            border: 2px solid black;
+            margin: 5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="d1"></div>
+    <script type="text/babel">
+        class First extends React.Component{ render(){ return(
+        <div class="betterview">
+            <h1>Hello First Component</h1>
+            <Second></Second>
+            <Third></Third>
+        </div>
+        ) } } class Second extends React.Component{ render(){ return(
+        <div class="betterview">
+            <h1>Hello Second Component</h1>
+            <Third/>
+        </div>
+        ) } } class Third extends React.Component{ render(){ return(
+        <div class="betterview">
+            <h1>Hello Third Component</h1>
+        </div>
+        ) } } ReactDOM.render(
+        <First/>,document.getElementById("d1"));
+    </script>
+</body>
+
+</html>

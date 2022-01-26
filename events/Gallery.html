@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image gallery</title>
+    <style>
+        #d1 {
+            margin: 0 auto;
+            display: inline-block;
+        }
+        
+        #img {
+            height: 200px;
+            width: 300px;
+            border: 2px solid black;
+            border-radius: 20px;
+            box-sizing: border-box;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="prev(event)">Prev</button>
+    <div id="d1">
+        <img id="img" src="images/virat-kohli-1.png" alt="" onclick="next(event)">
+    </div>
+    <button onclick="next(event)">Next </button>
+    <script>
+        var images = ['virat-kohli-1.png', 'virat-kohli-2.png', 'virat-kohli-3.png', 'virat-kohli-4.png', 'virat-kohli-5.png', 'virat-kohli-6.png', 'virat-kohli-7.png', 'virat-kohli-8.png', 'virat-kohli-9.png', 'virat-kohli-10.png', 'virat-kohli-11.png', 'virat-kohli-12.png', 'virat-kohli-13.png'];
+        var i = 0;
+
+        function next(e) {
+            if (i === images.length) {
+                i = 0;
+            }
+            document.getElementById("img").src = "images/" + images[i];
+            i++;
+        }
+
+        function prev(e) {
+            if (i <= 0) i = images.length - 1;
+            document.getElementById("img").src = "images/" + images[i];
+            i--;
+        }
+    </script>
+</body>
+
+</html>

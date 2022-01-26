@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Forms</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <section style="text-align: center;">
+        <h1>Signup / Register</h1>
+        <fieldset>
+            <form action="index.html" method="post" target="_blank" autocomplete="on" enctype="multipart">
+                <label for="fname">First Name :</label>
+                <input type="text" id="fname" name="fname" placeholder="Enter your First Name" autofocus required>
+				
+                <label for="lname">Last Name :</label>
+                <input type="text" id="lname" name="lname" placeholder="Enter your Last Name" required><br><br>
+				
+                <label for="email"> Email :</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required> <br><br>
+				
+                <label for="password"> Password :</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+				
+                <label for="password"> Confirm Password :</label>
+                <input type="password" id="password" name="password" placeholder="Confirm your password" required><br><br>
+				
+                <label for="mobile">Mobile No :</label>
+                <input type="tel" id="mobile" name="mobile" placeholder="Enter your Mobile.no" required> <br><br>
+				
+                <label for="Dob"> Date of Birth :</label>
+                <input type="date" id="Dob" name="Dob" required> <br><br>
+				
+                <label for="gender"> Gender :</label>
+				
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+				
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+				
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label> <br><br>
+				
+                <label for="checkbox"> Prerequisites :</label>
+				
+                <input type="checkbox" id="css" name="Prerequisites" value="html">
+                <label for="html"> HTML</label>
+				
+                <input type="checkbox" id="css" name="Prerequisites" value="Css">
+                <label for="css"> CSS</label>
+				
+                <input type="checkbox" id="javascript" name="Prerequisites" value="javascript">
+                <label for="javascript"> Javascript</label>
+				
+                <input type="checkbox" id="Bootstrap" name="Prerequisites" value="Bootstrap">
+                <label for="Bootstrap"> Bootstrap</label> <br><br>
+				
+                <label for="select"> Select Course :</label>
+                <select name="course" id="course">
+                    <option value="choose" selected> select</option>
+                    <option value="React.js">React.js</option>
+                    <option value="Angular.js">Angular.js</option>
+                    <option value="Node.js">Node.js</option>
+                    <option value="Express.js">Express.js</option>
+                    <option value="MongoDB">MongoDB</option>
+                </select>
+							
+                <label for="range"> No of Days :</label>
+                <input type="range" id="range" name="range" min="0" max="90"> <br><br>
+				
+                <label for="photo"> Upload Photo :</label>
+                <input type="file" id="photo" name="photo"> <br><br>
+				
+                <label for="queries"> Queries :</label><br><br>
+                <textarea name="queries" id="queries" cols="50" rows="10"></textarea> <br><br><br>
+				
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+                <input type="button" name="Back" value="Back">
+				
+            </form>
+        </fieldset>
+
+    </section>
+
+    <script src="" async defer></script>
+</body>
+
+</html>

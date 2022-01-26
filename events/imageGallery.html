@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Image Gallery using Event Object</title>
+    <style>
+        #d1 {
+            width: 300px;
+            height: 500px;
+            border: 2px solid black;
+            border-radius: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Image Gallery using Event Object</h1>
+    <img src="images/RCB.png" id="d1" onclick="next(event)" alt="">
+    <button onclick="next(event)"> Next </button>
+    <button onclick="prev(event)">Previous</button>
+    <script>
+        var images = [
+            'https://cdn.stocksnap.io/img-thumbs/960w/photographer-picture_RRDDRFSJCO.jpg',
+            'https://cdn.stocksnap.io/img-thumbs/960w/photographer-picture_MMA5ZK4YEI.jpg',
+            'https://cdn.stocksnap.io/img-thumbs/960w/person-smartphone_FXRFRU7UJX.jpg',
+        ]
+        var i = 0;
+
+        function next(e) {
+            if (i === images.length) {
+                i = 0;
+            }
+            document.getElementById("d1").src = images[i];
+            i++;
+        }
+
+        function prev(e) {
+            if (i === 0) {
+                i = images.length;
+            }
+            i--;
+            document.getElementById("d1").src = images[i];
+
+        }
+    </script>
+</body>
+
+</html>

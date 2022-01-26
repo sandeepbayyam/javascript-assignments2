@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h2>Finding the minimum among array elements</h2>
+    </body>
+    <script>
+        var ar=[133,200,3,426,5,4446,20,],min=ar[0];
+        document.write("The given array is ["+ar+"]<br><br>");
+        for (i=1; i<=ar.length-1;i++){
+            if (min>ar[i]) {
+                min=ar[i];
+            }
+        }
+        document.write("The minimum number is "+min+'<br>');
+    </script>
+</html>

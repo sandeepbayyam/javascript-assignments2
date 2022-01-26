@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Input box Read by event object</title>
+    <style>
+        #d1 {
+            height: 200px;
+            width: 600px;
+            border: 2px solid black;
+            margin: auto;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="d1">
+        <h1> Input box Read by event object </h1>
+        <label for="input">
+    <input type="text" placeholder="Enter your Text" name="input" id="input" onkeyup="inputread(event)">
+</label>
+        <h2 id="h2"> </h2>
+    </div>
+    <script>
+        function inputread(e) {
+            document.getElementById("h2").innerHTML = e.target.value;
+        }
+    </script>
+</body>
+
+</html>

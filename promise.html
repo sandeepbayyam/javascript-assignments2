@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Asyncronous function (promise)</title>
+</head>
+
+<body>
+    <script>
+        function add(x, y) {
+            return Promise.resolve(x + y);
+        }
+        add(10, 20).then(function(z) {
+            console.log(z);
+        })
+
+        function div(a, b) {
+            if (b === 0) {
+                return Promise.reject("Denominator should not be zero");
+            } else {
+                return Promise.resolve(a / b);
+            }
+        }
+        div(10, 0).then(function(c) {
+            console.log(c);
+        }).catch(function(err) {
+            console.log("Error ::", err)
+        })
+        console.log("hello");
+    </script>
+</body>
+
+</html>

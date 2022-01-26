@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title> descending of 3 numbers</title>
+
+</head>
+
+<body>
+    <p>Write a program to print the descending order in given three numbers
+    </p>
+
+    <script>
+        var a = +prompt("Enter a value");
+        var b = +prompt("Enter b value");
+        var c = +prompt("Enter c value");
+
+        if (a > b && a > c) {
+            if (b > c) {
+                console.log(a + " " + b + " " + c);
+            } else {
+                console.log(a + " " + c + " " + b);
+            }
+        } else if (b > a && b > c) {
+            if (c > a) {
+                console.log(b + " " + c + " " + a);
+            } else {
+                console.log(b + " " + a + " " + c);
+            }
+        } else if (c > a && c > b) {
+            if (a < b) {
+                console.log(c + " " + a + " " + b);
+            } else {
+                console.log(c + " " + b + " " + a);
+            }
+        }
+    </script>
+</body>
+
+</html>

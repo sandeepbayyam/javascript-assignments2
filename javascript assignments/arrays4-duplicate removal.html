@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h2>Removing duplicate elements from an array</h2>
+    </body>
+    <script>
+        var ar=[1,2,2,3,4,5,6,7,5,8,6];
+        document.write("The given array is ["+ar+"]<br><br>");
+        var br=[];
+        var k=0;
+        for(i=0;i<=ar.length-1;i++){
+            c=0;
+            for(j=0;j<=br.length-1;j++){
+                if(ar[i]===br[j]){
+                    c++;
+                }
+            }
+            if(c===0){
+                br[k]=ar[i];
+                k++;
+            }
+        }
+        document.write("After removing the duplicates, the new array is ["+br+"]<br><br>");
+    </script>
+</html>

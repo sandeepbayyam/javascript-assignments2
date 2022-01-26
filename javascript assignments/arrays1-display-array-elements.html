@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h2>Displaying array elements</h2>
+    </body>
+    <script>        
+        var ar=[11,12,13,14,15,16,17,18,19];
+        document.write("The given array is ["+ar+"]<br><br>");
+        document.write("(a) From starting element to the last element<br>");
+        for(i=0;i<=ar.length-1;i++){
+            document.write(ar[i]+"<br>");
+        }
+        document.write("<br>(b) From last element to the starting element<br>");
+        for(j=ar.length-1;j>=0;j--){
+            document.write(ar[j]+"<br>");
+        }
+    </script>
+</html>

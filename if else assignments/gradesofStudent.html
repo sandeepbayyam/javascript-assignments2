@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title> Grades of student</title>
+
+</head>
+
+<body>
+    <p>Write a program to take marks of three subjects and print the grade of student
+    </p>
+
+    <script>
+        var a = +prompt("Enter Maths marks");
+        var b = +prompt("Enter science marks");
+        var c = +prompt("Enter physics marks");
+
+        var percentage = (a + b + c) / 3;
+
+        if (percentage >= 70) {
+            console.log("Passed with distinction");
+        } else {
+            if (percentage >= 60) {
+                console.log("First class");
+            } else {
+                if (percentage >= 50) {
+                    console.log("Second class");
+                } else {
+                    if (percentage >= 40) {
+                        console.log("No class");
+                    } else {
+                        if (percentage < 40) {
+                            console.log("Failed");
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

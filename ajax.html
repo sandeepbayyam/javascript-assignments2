@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Ajax api </title>
+</head>
+
+<body>
+    <script>
+        var http = new XMLHttpRequest();
+        http.onloadend = function() {
+            console.log(http.responseText);
+        }
+        http.open("GET", 'https://restcountries.com/v3.1/all');
+        http.send();
+    </script>
+</body>
+
+</html>

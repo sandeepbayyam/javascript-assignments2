@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title> fetch Ajax api </title>
+</head>
+
+<body>
+    <script>
+        fetch('https://restcountries.com/v3.1/all')
+            .then(function(x) {
+                x.json().then(function(data) {
+                    console.log(data);
+                })
+            })
+    </script>
+</body>
+
+</html>
